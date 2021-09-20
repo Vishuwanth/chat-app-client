@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 import io from 'socket.io-client'
 import Chart from './Components/Chat/Chat.js'
 
-const socket = io.connect('https://vishu-messenger-app.herokuapp.com/:3005')
-
+const socket = io.connect('http://localhost:3005')
+// https://vishu-messenger-app.herokuapp.com:3005
 function App() {
 	const [username, setUsername] = useState('')
 	const [room, setRoom] = useState('')
